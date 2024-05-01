@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "789352744128",
+    "project_id": "cropshop-e269a",
+    "storage_bucket": "cropshop-e269a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789352744128:android:42c8e86a0594298d2a1925",
+        "android_client_info": {
+          "package_name": "com.example.cropshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789352744128-d85a97edgoku15g2qectcajngm6jdg7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaEgOaKY2M36kiU6tFgRavfp1umJLx-ck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789352744128-d85a97edgoku15g2qectcajngm6jdg7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789352744128:android:864676c5258bd3192a1925",
+        "android_client_info": {
+          "package_name": "com.example.cropshop_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789352744128-d85a97edgoku15g2qectcajngm6jdg7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaEgOaKY2M36kiU6tFgRavfp1umJLx-ck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789352744128-d85a97edgoku15g2qectcajngm6jdg7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

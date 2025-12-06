@@ -51,6 +51,7 @@ class _HeartButtonWidgetState extends State<HeartButtonWidget> {
             }
             await wishlistsProvider.fetchWishlist();
           } catch (e) {
+            if (!context.mounted) return;
             await MyAppFunctions.showErrorOrWarningDialog(
               context: context,
               subtitle: e.toString(),

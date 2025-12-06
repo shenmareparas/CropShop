@@ -111,6 +111,7 @@ class _ProductWidgetState extends State<ProductWidget> {
                                       qty: 1,
                                       context: context);
                                 } catch (e) {
+                                  if (!context.mounted) return;
                                   await MyAppFunctions.showErrorOrWarningDialog(
                                     context: context,
                                     subtitle: e.toString(),

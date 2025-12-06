@@ -139,6 +139,7 @@ class _CartScreenState extends State<CartScreen> {
       await cartProvider.clearCartFromFirebase();
       cartProvider.clearLocalCart();
     } catch (e) {
+      if (!mounted) return;
       await MyAppFunctions.showErrorOrWarningDialog(
         context: context,
         subtitle: e.toString(),

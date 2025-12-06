@@ -39,6 +39,7 @@ class _ProfileScreenState extends State<ProfileScreen>
       });
       userModel = await userProvider.fetchUserInfo();
     } catch (error) {
+      if (!mounted) return;
       await MyAppFunctions.showErrorOrWarningDialog(
         context: context,
         subtitle: error.toString(),
@@ -101,8 +102,7 @@ class _ProfileScreenState extends State<ProfileScreen>
                               shape: BoxShape.circle,
                               color: Theme.of(context).cardColor,
                               border: Border.all(
-                                  color:
-                                      Theme.of(context).colorScheme.background,
+                                  color: Theme.of(context).colorScheme.surface,
                                   width: 3),
                               image: DecorationImage(
                                 image: NetworkImage(
@@ -230,7 +230,7 @@ class _ProfileScreenState extends State<ProfileScreen>
                         subtitle: "Are you sure you want to SignOut",
                         fct: () async {
                           await FirebaseAuth.instance.signOut();
-                          if (!mounted) return;
+                          if (!context.mounted) return;
                           Navigator.pushReplacementNamed(
                               context, LoginScreen.routeName);
                         },

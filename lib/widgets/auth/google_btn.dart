@@ -43,12 +43,14 @@ class GoogleButton extends StatelessWidget {
         Navigator.pushReplacementNamed(context, RootScreen.routeName);
       });
     } on FirebaseException catch (error) {
+      if (!context.mounted) return;
       await MyAppFunctions.showErrorOrWarningDialog(
         context: context,
         subtitle: error.message.toString(),
         fct: () {},
       );
     } catch (error) {
+      if (!context.mounted) return;
       await MyAppFunctions.showErrorOrWarningDialog(
         context: context,
         subtitle: error.toString(),

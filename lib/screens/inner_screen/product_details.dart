@@ -120,6 +120,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                                             qty: 1,
                                             context: context);
                                       } catch (e) {
+                                        if (!context.mounted) return;
                                         await MyAppFunctions
                                             .showErrorOrWarningDialog(
                                           context: context,

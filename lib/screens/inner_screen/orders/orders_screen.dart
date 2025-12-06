@@ -10,7 +10,7 @@ import 'orders_widget.dart';
 class OrdersScreenFree extends StatefulWidget {
   static const routeName = '/OrderScreen';
 
-  const OrdersScreenFree({Key? key}) : super(key: key);
+  const OrdersScreenFree({super.key});
 
   @override
   State<OrdersScreenFree> createState() => _OrdersScreenFreeState();
@@ -56,8 +56,7 @@ class _OrdersScreenFreeState extends State<OrdersScreenFree> {
                 );
               },
               separatorBuilder: (BuildContext context, int index) {
-                return const Divider(
-                    );
+                return const Divider();
               },
             );
           },
